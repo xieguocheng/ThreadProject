@@ -58,12 +58,14 @@ public class Test {
 		service2.submit(input->{
 			//以下重写了task<>类的get方法
 			try {
-				TimeUnit.SECONDS.sleep(1);
+				TimeUnit.SECONDS.sleep(5);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 			return input.length();
 		},"hello",System.out::println);
+		
+		System.out.println("-----");
 		
 	}
 
